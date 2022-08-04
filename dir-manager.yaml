@@ -1,0 +1,20 @@
+GitKeep: true
+
+Modules:
+  SampleModule:
+    - Name: dir1
+      Child:
+        - Name: dir2
+          Child:
+            - Name: dir3
+            - Name: dir4
+            - Name: dir5 
+
+Directories:
+  - Name: testdir
+    Child:
+      - Name: app
+        Ref: SampleModule
+      - Name: cmd
+        Child:
+          - Name: dir-manager
